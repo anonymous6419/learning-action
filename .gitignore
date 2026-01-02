@@ -1,0 +1,32 @@
+# =========================
+# Environment & Secrets
+# =========================
+.env
+.env.*
+*.env
+
+# GCP / Vertex AI credentials
+vertex-ai.json
+vertex*.json
+vertex*.b64.txt
+*.b64.txt
+
+# Any secrets folder
+secrets/
+credentials/
+
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
