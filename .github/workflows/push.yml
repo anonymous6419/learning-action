@@ -1,0 +1,15 @@
+name: console on every push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  console:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Consoling Hi
+        run: |
+          node -e "console.log('Hi from GitHub Actions')"
