@@ -1,0 +1,14 @@
+name: Run JS file from Actions
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    js: 
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Fetching Js
+            run: "./test.js"
