@@ -11,4 +11,4 @@ jobs:
         
         steps:
             - name: Fetching Js
-            run: "./test.js"
+              run: "./test.js"
