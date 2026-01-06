@@ -1,0 +1,19 @@
+name: Install Node
+
+on:
+  push:
+    branches:
+        - main
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Install NodeJs
+        uses: actions/setup-node@v4
+        with: 
+            node-version: 20
+
+      - name: Console NodeJs version
+        run : node -v
