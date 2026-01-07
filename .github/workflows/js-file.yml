@@ -10,5 +10,13 @@ jobs:
         runs-on: ubuntu-latest
         
         steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Nodejs
+              uses: action/setup-node@v4
+              with:
+                node-version: 20
+
             - name: Fetching Js
               run: "./test.js"
